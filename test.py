@@ -1,7 +1,9 @@
 from pyrogram import Client, filters
 from core import Module, Author
 
-__version__ = 'v1.2.0-alpha'
+__version__ = 'v1.2.0-beta'
+
+return
 
 module = Module(
     module_id='test',
@@ -64,7 +66,7 @@ async def test_from_me_handler(_, msg):
     await msg.edit(module.get_string('bot_works'))
 
 
-@Client.on_message(filters.command('test', ['!']) & filters.me)
+@Client.on_message(filters.command('fuck', ['!']))
 async def test_from_me_2_handler(_, msg):
-    await msg.edit(module.get_string('fuck'))
+    await msg.reply(module.get_string('fuck'))
 
