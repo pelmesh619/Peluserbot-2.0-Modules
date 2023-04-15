@@ -1,9 +1,7 @@
 from pyrogram import Client, filters
 from core import Module, Author
 
-__version__ = 'v1.2.0-beta'
-
-return
+__version__ = 'v1.2.0-gamma'
 
 module = Module(
     module_id='test',
